@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Amma AI",
+    "slug": "amma-ai",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.sktovideos.ammaai",
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS",
+        "INTERNET"
+      ]
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "@config-plugins/react-native-webrtc",
+        {
+          "cameraPermission": "Amma AI does not use the camera.",
+          "microphonePermission": "Allow Amma AI to hear your Tamil voice during a live conversation."
+        }
+      ]
+    ]
+  }
+}
